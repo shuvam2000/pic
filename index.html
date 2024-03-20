@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Dynamic Photo Link</title>
+    <title>Registration</title>
     <style>
-        /* Optional: Style for the image */
-        img {
-            width: 300px; /* Adjust size as needed */
-            height: auto;
-            cursor: pointer; /* Change cursor to indicate it's clickable */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
         }
     </style>
 </head>
+
 <body>
-    <!-- This is the dynamic photo -->
-    <img id="dynamicImage" src="gudu.jpg" alt="Dynamic Photo" onclick="goToPage()">
-    
-    <!-- JavaScript to redirect when image is clicked -->
-    <script>
-        function goToPage() {
-            // Replace this URL with the webpage you want to link to
-            var url = "https://www.google.com";
-            window.location.href = url; // Redirect to the URL
-        }
-    </script>
+
+    <div class="container">
+        <img src="gudu1.png" alt="Logo" class="logo">
+        <!-- <h1>Registration</h1> -->
+        <!-- <p>Click the button below to apply:</p> -->
+        <div class="btn-container">
+            <a href="https://forms.gle/aeogAcW69YAEt5z79" class="btn">Apply Now</a>
+        </div>
+    </div>
+
 </body>
+
 </html>
