@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Photo Link</title>
+    <style>
+        /* Optional: Style for the image */
+        img {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+            cursor: pointer; /* Change cursor to indicate it's clickable */
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the dynamic photo -->
+    <img id="dynamicImage" src="gudu.jpg" alt="Dynamic Photo" onclick="goToPage()">
+    
+    <!-- JavaScript to redirect when image is clicked -->
+    <script>
+        function goToPage() {
+            // Replace this URL with the webpage you want to link to
+            var url = "https://www.google.com";
+            window.location.href = url; // Redirect to the URL
+        }
+    </script>
+</body>
+</html>
